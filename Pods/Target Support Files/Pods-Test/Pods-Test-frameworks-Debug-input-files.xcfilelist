@@ -1,0 +1,8 @@
+${PODS_ROOT}/Target Support Files/Pods-Test/Pods-Test-frameworks.sh
+${BUILT_PRODUCTS_DIR}/RZDarkModeKit/RZDarkModeKit.framework
+${BUILT_PRODUCTS_DIR}/RZEvent/RZEvent.framework
+${BUILT_PRODUCTS_DIR}/RZObservableKit/RZObservableKit.framework
+${BUILT_PRODUCTS_DIR}/RZStoreKit/RZStoreKit.framework
+${BUILT_PRODUCTS_DIR}/RZUIPacKit/RZUIPacKit.framework
+${BUILT_PRODUCTS_DIR}/RZViewBuilder/RZViewBuilder.framework
+${BUILT_PRODUCTS_DIR}/SwiftyStoreKit/SwiftyStoreKit.framework

@@ -1,0 +1,72 @@
+PODS:
+  - RelizKit (5.1):
+    - RelizKit/Core (= 5.1)
+  - RelizKit/Core (5.1):
+    - RelizKit/CoreOnly
+    - RelizKit/RZEvent
+    - RelizKit/RZObservableKit
+    - RelizKit/RZStoreKit
+    - RelizKit/RZUIKit
+  - RelizKit/CoreOnly (5.1)
+  - RelizKit/RZDarkModeKit (5.1):
+    - RelizKit/CoreOnly
+    - RZDarkModeKit
+  - RelizKit/RZEvent (5.1):
+    - RelizKit/CoreOnly
+    - RZEvent
+  - RelizKit/RZObservableKit (5.1):
+    - RelizKit/CoreOnly
+    - RZObservableKit
+  - RelizKit/RZStoreKit (5.1):
+    - RelizKit/CoreOnly
+    - RZStoreKit
+  - RelizKit/RZUIKit (5.1):
+    - RelizKit/CoreOnly
+    - RelizKit/RZDarkModeKit
+    - RelizKit/RZUIPacKit
+    - RelizKit/RZViewBuilder
+  - RelizKit/RZUIPacKit (5.1):
+    - RelizKit/CoreOnly
+    - RZUIPacKit
+  - RelizKit/RZViewBuilder (5.1):
+    - RelizKit/CoreOnly
+    - RZViewBuilder
+  - RZDarkModeKit (2.0.7)
+  - RZEvent (1.0.2)
+  - RZObservableKit (1.0.4)
+  - RZStoreKit (1.0):
+    - SwiftyStoreKit
+  - RZUIPacKit (1.1.3):
+    - RZObservableKit
+  - RZViewBuilder (2.3.9):
+    - RZDarkModeKit
+    - RZObservableKit
+  - SwiftyStoreKit (0.16.1)
+
+DEPENDENCIES:
+  - RelizKit
+
+SPEC REPOS:
+  trunk:
+    - RelizKit
+    - RZDarkModeKit
+    - RZEvent
+    - RZObservableKit
+    - RZStoreKit
+    - RZUIPacKit
+    - RZViewBuilder
+    - SwiftyStoreKit
+
+SPEC CHECKSUMS:
+  RelizKit: 50db624a021e653152981399ab06a744c36f37e6
+  RZDarkModeKit: a0cd9d03afec63c9084299f55eab1427057b9131
+  RZEvent: 1c92e370ee95c32f54e2ca4acec07d194a04b2a4
+  RZObservableKit: fb985626a6e3f36935937ebd200cfc58e7ac75d5
+  RZStoreKit: 4bf888dc6ad1f1e2c516873b7c5a324c88676813
+  RZUIPacKit: e05ae62dafb69a77706e4716e9df56679023f596
+  RZViewBuilder: 49180fce8ef013519d22bb951efbbf7a2e5ce809
+  SwiftyStoreKit: 6b9c08810269f030586dac1fae8e75871a82e84a
+
+PODFILE CHECKSUM: 0d46c574ef95ec172434828f1f4261b257e6c107
+
+COCOAPODS: 1.10.1
