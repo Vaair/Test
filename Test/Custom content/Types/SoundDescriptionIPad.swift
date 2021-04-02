@@ -10,4 +10,5 @@ import RelizKit
 class SoundDescriptionIPad: SoundDescriptionIPhone {
     // +- выглядит как на iPhone
     override var buttonHeight: RZProtoValue {15*}
+    
 }
