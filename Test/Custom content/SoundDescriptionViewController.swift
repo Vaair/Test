@@ -11,7 +11,7 @@ class SoundDescriptionViewController: RZUIPacController {
     override var supportedInterfaceOrientations: UIInterfaceOrientationMask {.portrait}
     
     var iPhoneViewType: RZUIPacAnyViewProtocol.Type? {SoundDescriptionIPhone.self}
-    var iPadViewType:   RZUIPacAnyViewProtocol.Type? {SoundDescriptionIPhone.self}
+    var iPadViewType:   RZUIPacAnyViewProtocol.Type? {SoundDescriptionIPad.self}
     //var macViewType:    RZUIPacAnyViewProtocol.Type? {SoundDescriptionMac.self}
     
     var router = SoundDescriptionRouter()

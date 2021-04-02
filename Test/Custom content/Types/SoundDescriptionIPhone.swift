@@ -10,16 +10,17 @@ import RelizKit
 class SoundDescriptionIPhone: RZUIPacView{
     var router: SoundDescriptionRouter!
     
-    var contentWidth: RZProtoValue {router.isHorizontal ? 80 % self*.h : 80 % self*.w}
-    var imageWidth: RZProtoValue {router.isHorizontal ? 100 % self*.h : 100 % self*.w}
+    var contentWidth: RZProtoValue {80 % self*.w}
+    var imageWidth: RZProtoValue {100 % self*.w}
     
-    var buttonsWidth: RZProtoValue {router.isHorizontal ? 5 % self*.h : 5 % self*.w}
+    var buttonsWidth: RZProtoValue {5 % self*.w}
+    var buttonHeight: RZProtoValue {17.5*}
     
-    var rlSpace: RZProtoValue {router.isHorizontal ? 10 % self*.h : 10 % self*.w}
-    var topSpace: RZProtoValue {router.isHorizontal ? 10 % self*.h : 10 % self*.w}
-    var downSpace: RZProtoValue {router.isHorizontal ? 10 % self*.h : 10 % self*.w}
-    var space: RZProtoValue {router.isHorizontal ? 5 % self*.h : 5 % self*.w}
-    var spaceBetweenTime: RZProtoValue {router.isHorizontal ? 3 % self*.h : 3 % self*.w}
+    var rlSpace: RZProtoValue {10 % self*.w}
+    var topSpace: RZProtoValue {10 % self*.w}
+    var downSpace: RZProtoValue {10 % self*.w}
+    var space: RZProtoValue {5 % self*.w}
+    var spaceBetweenTime: RZProtoValue {3 % self*.w}
     
     var scroll = UIScrollView()
     
@@ -141,7 +142,7 @@ class SoundDescriptionIPhone: RZUIPacView{
         scroll.addSubview(playButton)
         playButton+>
             .color(.c3P)
-            .width(contentWidth).height(17.5 % .selfTag(.w)).cornerRadius(playButton|*.h / 2*)
+            .width(contentWidth).height(buttonHeight % .selfTag(.w)).cornerRadius(playButton|*.h / 2*)
             .x(rlSpace).y(headphonesImage|*.mY + space)
             .text(router.actionTitle).font(.title2)
             .addAction(router.playButtonAction)
@@ -150,7 +151,7 @@ class SoundDescriptionIPhone: RZUIPacView{
     private func createDownloadButton(){
         scroll.addSubview(downloadButton)
         downloadButton+>
-            .width(contentWidth).height(17.5 % .selfTag(.w)).cornerRadius(downloadButton|*.h / 2*)
+            .width(contentWidth).height(buttonHeight % .selfTag(.w)).cornerRadius(downloadButton|*.h / 2*)
             .border(1)
             .color(.c3P, .boder)
             .color(.c8, .content)
