@@ -107,7 +107,7 @@ class SoundDescriptionIPhone: RZUIPacView{
         scroll.addSubview(titleLabel)
         titleLabel+>
             .text(router.soundLabelText).font(.largeTitle).color(.c8, .content)
-            .width(contentWidth)
+            .width(contentWidth - isFavoriteButton|*.w) //видимо из-за строчки ниже, если очень длинный title, он не обрезается, не смотря на то, что ширина задана
             .sizeToFit()
             .y(self.imageView|*.mY + self.space).x(self.rlSpace)
     }
